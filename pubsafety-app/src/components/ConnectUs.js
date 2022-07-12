@@ -1,4 +1,4 @@
-function Events(){
+function ConnectUs(){
     return (
      <Card 
         bgcolor="gray"
@@ -6,7 +6,7 @@ function Events(){
         header="HEADER"
         title="TITLE"
         text="BLAH BLAH"
-        body="EVENTS"
+        body="CONNECT US"
       />
     );  
   }
