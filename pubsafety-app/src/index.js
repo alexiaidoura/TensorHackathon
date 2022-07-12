@@ -1,18 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+function Spa() {
+  
+  return (
+    <HashRouter>
+      <NavBar/>
+      <UserContext.Provider value={{users:[{name:'katelyn',email:'katelyn@example.com',password:'secret'}]}}>              
+        <Route path="/" exact component={Home} />
+        <Route path="/about" component={About} />
+
+        <Route path="/connectUs" component={ConnectUs} />
+        <Route path="/events" component={Events} />
+
+        <Route path="/login" component={Login} />
+      </UserContext.Provider>      
+    </HashRouter>
+  );
+}
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+  <Spa/>,
+  document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
