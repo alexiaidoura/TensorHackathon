@@ -44,3 +44,18 @@ code {
 .navbar-brand{
   color: mediumseagreen;
 }
+
+
+.Login{
+  background-color: lightblue;
+  margin: 1%;
+  padding-bottom: 50%;
+}
+
+.btn-light{
+  margin-top: 10%;
+  background-color: lightblue;
+}
+
+
+
