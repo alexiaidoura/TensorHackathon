@@ -14,7 +14,8 @@ function Home(){
   const mapwidth = 200;
     return (
       <>
-      <div className="row">
+      <div className= "Home">
+        <div className="row">
         <div className="col">
           <h1>Welcome to Whoville</h1>
         </div>
@@ -99,12 +100,7 @@ function Home(){
         />
         </div>
         </div>
-        <div className="row">
-        <div className="col">
-          <MyFooter />
-          
         </div>
-      </div>
       
       </>
     );  

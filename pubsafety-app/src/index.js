@@ -12,7 +12,8 @@ function Spa() {
         <Route path="/events" component={Events} />
 
         <Route path="/login" component={Login} />
-      </UserContext.Provider>      
+      </UserContext.Provider> 
+      <MyFooter/>     
     </HashRouter>
   );
 }
