@@ -63,3 +63,7 @@ code {
   margin: 1%;
   padding-bottom: 50%;
 }
+
+.map-container {
+  height: 400px;
+}

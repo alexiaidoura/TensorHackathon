@@ -10,7 +10,9 @@ function Home(){
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const ctx = React.useContext(UserContext);    
-  //pull in event data from json file or db
+  //this week's events: pull in event data from json file or db
+  //check in: store current location and display last five?
+  //events near me: embed map with markers
   const mapwidth = 200;
     return (
       <>

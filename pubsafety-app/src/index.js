@@ -1,4 +1,10 @@
 
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// //import 'mapbox-gl/dist/mapbox-gl.css';
+//import './index.css';
+// //import Spa from './index.js';
+
 function Spa() {
   
   return (
