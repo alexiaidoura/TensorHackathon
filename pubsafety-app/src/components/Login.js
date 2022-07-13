@@ -1,13 +1,10 @@
-// DIDN'T DO ANYTHING WITH THIS COMPONENT YET
-
-import React from "react";
-
-export function Login(){
+function Login(){
     const [show, setShow]           =React.useState(true);
     const [status, setStatus]       =React.useState(''); 
     const [email, setEmail]        =React.useState('');
     const [password, setPassword]  =React.useState('');
- 
+
+    const ctx = React.useContext(UserContext); 
 
     function validate(field, label){
         if (!field) {
@@ -21,6 +18,7 @@ export function Login(){
     function submit(){
         if (!validate(email,      'email'))   return; 
         if (!validate(password,   'emaild'))  return;
+        ctx.users.push('login successful'); 
     }
     
 
@@ -31,20 +29,22 @@ export function Login(){
     }
 
  return (
-    <div className="classes" style={{maxWidth: "18rem"}}>
-    <div className="card-header"></div>
-    <div className="card-body">
-    body={
-        <>
-        Email address<br/>
-        <input type="input" className="form-control" id="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.currentTarget.value)}/><br/>
-        Password<br/>
-        <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange={e => setPassword(e.currentTarget.value)}/><br/>
-        <button type="submit" className="btn btn-light" onClick={submit}>Login</button>
-        </>
-    }
-    
+    <div className= "Login">
+        <Card
+            bgcolor="light card title"
+            header="Login"
+            body={
+                    <>
+                   Email address<br/>
+                    <input type="input" className="form-control" id="email" placeholder="Enter email"/>
+                    Password<br/>
+                    <input type="password" className="form-control" id="password" placeholder="Enter password"/>
+                   
+                    <button type="submit" className="btn btn-light" onClick={submit}>Login</button>
+                    </>
+ }
+        
+        />
     </div>
-  </div> 
- )};
-
+    )
+}
