@@ -57,5 +57,25 @@ code {
   background-color: lightblue;
 }
 
+.home{
+  background-color: lightblue;
+}
 
+.container{
+  height: 40em;
+  margin: 1%; 
+  background-color: lightblue;
+}
+.col1{
+  max-width: 25%;
+  padding-right: 5%;
+}
+.col{
+  max-width: fit-content;
+}
 
+.form-select{
+  margin-top: 10%;
+  background-color: lightgrey;
+  font-size: large;
+}

@@ -3,6 +3,7 @@
 //import NearMe from "./NearMe.js";
 
 //TODO: onClick={} -- add location to json file or just state? print history?
+// add a slider that you can use when you check in to say how busy the event is?
 
 function Home(){
   const [status, setStatus] = React.useState('');
@@ -14,6 +15,7 @@ function Home(){
   const mapwidth = 200;
     return (
       <>
+      <div className="home">
       <div className="row">
         <div className="col">
           <h1>Welcome to Whoville</h1>
@@ -101,11 +103,10 @@ function Home(){
         </div>
         <div className="row">
         <div className="col">
-          <MyFooter />
           
         </div>
       </div>
-      
+      </div>
       </>
     );  
   }

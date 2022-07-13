@@ -1,4 +1,3 @@
-
 function Spa() {
   
   return (
@@ -13,6 +12,7 @@ function Spa() {
 
         <Route path="/login" component={Login} />
       </UserContext.Provider>      
+      <MyFooter />
     </HashRouter>
   );
 }
