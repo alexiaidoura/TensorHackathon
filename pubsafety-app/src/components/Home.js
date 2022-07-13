@@ -25,11 +25,7 @@ function Home(){
         <div className="col">
         <CardWide 
         cardimage="../src/cotc-kids.jpeg"
-        bgcolor="gray"
-        txtcolor="black"
         header="This week"
-        title=""
-        text=""
         body={
           <>
           <table border={2} align="center">
@@ -75,22 +71,17 @@ function Home(){
       
       
       <div className="row">
-        <div className="col-sm-6">
+        <div className="col-sm-6 text-center">
         <Card 
-          cardimage="../src/4641_w.jpeg"
-          header="Check in"
-          text="Click here to let your friends know you are here!"
           body= {
           <>
-          <button type="submit" className="btn btn-light">Check in!</button>
-
+            <img src="../src/4641_w.jpeg" width="200"></img><br></br>
+            <button type="submit" className="btn btn-light">Check in!</button>
           </>}
-        /> 
+        />
         </div>
         <div className="col-sm-6">
         <Card 
-          header="Events near me"
-          text="Still need to figure out how to embed the map in component vs web page"
           body= {
           <>
           <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>
