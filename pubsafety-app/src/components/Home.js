@@ -10,7 +10,7 @@ function Home(){
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const ctx = React.useContext(UserContext);    
-
+  //pull in event data from json file or db
   const mapwidth = 200;
     return (
       <>
@@ -24,14 +24,15 @@ function Home(){
       <div className="row">
         <div className="col">
         <CardWide 
+        cardimage="../src/cotc-kids.jpeg"
         bgcolor="gray"
         txtcolor="black"
         header="This week"
-        title="Events"
-        text="pull in from json file or db"
+        title=""
+        text=""
         body={
           <>
-          <table border={2}>
+          <table border={2} align="center">
             <tr>
             <th>
               Event
@@ -45,24 +46,24 @@ function Home(){
             </tr>
             <tr>
             <td>
-              Event
+              Science Club!
             </td>
             <td>
-              Date
+              Friday 3pm
             </td>
             <td>
-              Location
+              Children's Museum
             </td>
             </tr>
             <tr>
             <td>
-              Event
+              Water balloon tag!
             </td>
             <td>
-              Date
+              Saturday 10am
             </td>
             <td>
-              Location
+              Sprayground
             </td>
             </tr>
           </table>
@@ -74,10 +75,9 @@ function Home(){
       
       
       <div className="row">
-        <div className="col">
+        <div className="col-sm-6">
         <Card 
-          bgcolor="gray"
-          txtcolor="black"
+          cardimage="../src/4641_w.jpeg"
           header="Check in"
           text="Click here to let your friends know you are here!"
           body= {
@@ -87,10 +87,8 @@ function Home(){
           </>}
         /> 
         </div>
-        <div className="col">
+        <div className="col-sm-6">
         <Card 
-          bgcolor="gray"
-          txtcolor="black"
           header="Events near me"
           text="Still need to figure out how to embed the map in component vs web page"
           body= {
