@@ -61,6 +61,16 @@ code {
   background-color: lightblue;
 }
 
+.Home{
+  background-color: lightblue;
+  margin: 1%;
+  padding-bottom: 50%;
+}
+
+.map-container {
+  height: 400px;
+}
+
 .container{
   height: 40em;
   margin: 1%; 

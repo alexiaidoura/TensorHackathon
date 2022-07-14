@@ -11,28 +11,28 @@ function Home(){
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
   const ctx = React.useContext(UserContext);    
-
+  //this week's events: pull in event data from json file or db
+  //check in: store current location and display last five?
+  //events near me: embed map with markers
   const mapwidth = 200;
     return (
       <>
-      <div className="home">
-      <div className="row">
+      <div className= "Home">
+        <div className="row">
+
         <div className="col">
-          <h1>Welcome to Whoville</h1>
+          <h1>Welcome to Whosville</h1>
         </div>
       </div>
 
       <div className="row">
         <div className="col">
         <CardWide 
-        bgcolor="gray"
-        txtcolor="black"
+        cardimage="../src/cotc-kids.jpeg"
         header="This week"
-        title="Events"
-        text="pull in from json file or db"
         body={
           <>
-          <table border={2}>
+          <table border={2} align="center">
             <tr>
             <th>
               Event
@@ -46,24 +46,24 @@ function Home(){
             </tr>
             <tr>
             <td>
-              Event
+              Science Club!
             </td>
             <td>
-              Date
+              Friday 3pm
             </td>
             <td>
-              Location
+              Children's Museum
             </td>
             </tr>
             <tr>
             <td>
-              Event
+              Water balloon tag!
             </td>
             <td>
-              Date
+              Saturday 10am
             </td>
             <td>
-              Location
+              Sprayground
             </td>
             </tr>
           </table>
@@ -75,25 +75,18 @@ function Home(){
       
       
       <div className="row">
-        <div className="col">
+        <div className="col-sm-6 text-center">
         <Card 
-          bgcolor="gray"
-          txtcolor="black"
-          header="Check in"
-          text="Click here to let your friends know you are here!"
           body= {
           <>
-          <button type="submit" className="btn btn-light" >Check in!</button>
+            <img src="../src/4641_w.jpeg" width="200"></img><br></br>
+            <button type="submit" className="btn btn-light">Check in!</button>
 
           </>}
-        /> 
+        />
         </div>
-        <div className="col">
+        <div className="col-sm-6">
         <Card 
-          bgcolor="gray"
-          txtcolor="black"
-          header="Events near me"
-          text="Still need to figure out how to embed the map in component vs web page"
           body= {
           <>
           <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>
@@ -101,12 +94,8 @@ function Home(){
         />
         </div>
         </div>
-        <div className="row">
-        <div className="col">
-          
         </div>
-      </div>
-      </div>
+
       </>
     );  
   }
