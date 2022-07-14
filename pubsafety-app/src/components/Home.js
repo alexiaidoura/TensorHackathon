@@ -6,14 +6,14 @@
 // add a slider that you can use when you check in to say how busy the event is?
 
 function Home(){
-  const [status, setStatus] = React.useState('');
-  //const [show, setShow] = React.useState(true);
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
-  const ctx = React.useContext(UserContext);    
-  //this week's events: pull in event data from json file or db
-  //check in: store current location and display last five?
-  //events near me: embed map with markers
+  // const [status, setStatus] = React.useState('');
+  // //const [show, setShow] = React.useState(true);
+  // const [email, setEmail] = React.useState('');
+  // const [password, setPassword] = React.useState('');
+  // const ctx = React.useContext(UserContext);    
+  // //this week's events: pull in event data from json file or db
+  // //check in: store current location and display last five?
+  // //events near me: embed map with markers
   const mapwidth = 200;
 
   const [data, setData] = React.useState(null);        
@@ -22,14 +22,14 @@ function Home(){
     React.useEffect(() => {
         async function getData() {
             const response = await fetch('../src/components/eventdata.json');
-            console.log('response ' + response);
+            //console.log('response ' + response);
             const json     = await response.json();
             setData(json);
             setLoaded(true);
         }
         getData();
     },[])
-    console.log('loaded:', loaded, 'data:', data);
+    //console.log('loaded:', loaded, 'data:', data);
 
     
 
@@ -38,7 +38,7 @@ function Home(){
       <>
       <div className= "Home">
         
-          <h1>Welcome to Whosville</h1>
+      <h1 className="display-2 text-center">Welcome to Whosville!</h1>
         
 
       <div className="row">
@@ -57,10 +57,18 @@ function Home(){
         </div>
       
       
+        <div className="card mb-3">
+          <img src="../src/4641_w.jpeg" className="card-img-top"></img>
+            <div className="card-body">
+              <h3 className="card-text">Where are you hanging?</h3>
+              
+              <button type="submit" className="btn btn-primary btn-lg">Check in!</button>
+            </div>
+            </div>
       
-      
-        <div className="col-sm-6 text-center">
+        <div className="col">
         <Card 
+          header="Check in!"
           body= {
           <>
             <img src="../src/4641_w.jpeg" width="200"></img><br></br>
@@ -69,12 +77,13 @@ function Home(){
           </>}
         />
         </div>
-        <div className="col-sm-6">
+        <div className="col">
         <Card 
+          header="Events near me"
           body= {
           <>
 
-          <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>
+          <a href='../src/components/nearme.html'><img src='../src/components/eventsnearme.png' style={{mapwidth}}></img></a>
           </>}
         />
         </div>
@@ -84,4 +93,3 @@ function Home(){
       </>
     );  
   }
-  //          <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>

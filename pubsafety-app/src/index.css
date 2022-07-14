@@ -12,7 +12,13 @@ code {
     monospace;
 }
 
+header{
+  text-decoration-line: underline;
+}
 
+CardWide{
+  padding: 10px;
+}
 
 .about{
   text-align: center;
