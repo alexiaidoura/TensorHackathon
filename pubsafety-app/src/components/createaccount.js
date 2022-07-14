@@ -38,7 +38,7 @@ function CreateAccount(){
     if (!validate(name, 'name')) return;
     if (!validate(email, 'email')) return;
     if (!validate(password, 'password')) return;
-    ctx.users.push({name,email,password,balance:100});
+    ctx.users.push({name,email,password});
     //console.log('context is ' + JSON.stringify(ctx)); //ok USE THIS FOR MY BUG VIDEO?
     setShow(false);
     //clearForm();

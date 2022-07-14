@@ -38,26 +38,24 @@ function Home(){
       <>
       <div className= "Home">
         
-          <h1>Welcome to Whosville</h1>
+      <h1 className="display-2 text-center">Welcome to Whosville!</h1>
         
-
+      
       <div className="row">
-        <div className="col">
-        <CardWide 
-        cardimage="../src/cotc-kids.jpeg"
-        header="This week"
-        body={
-          <>
-            {loaded && data.events.map((event,i) => (
+          <div className="col" id="upcomingEvents">
+          <CardWide 
+              cardimage="../src/cotc-kids.jpeg"
+              header="Upcoming Events"
+              body={
+                <>
+                    {loaded && data.events.map((event,i) => (
                     <MyEvent data={event} key={i}/>           
-                ))};     
-        </>   
-        }
-      />
-        </div>
-      
-      
-      
+                ))}     
+                </>  
+              }
+          />
+          </div> 
+        
       
         <div className="col">
         <Card 
@@ -86,4 +84,3 @@ function Home(){
       </>
     );  
   }
-  //          <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>
