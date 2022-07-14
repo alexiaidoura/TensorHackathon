@@ -1,6 +1,9 @@
+
+
 function Spa() {
-  
   return (
+    <div>
+    <Events></Events>
     <HashRouter>
       <NavBar/>
       <UserContext.Provider value={{users:[{name:'katelyn',email:'katelyn@example.com',password:'secret',lastlocation:'123 Main St'}]}}>              
@@ -14,6 +17,7 @@ function Spa() {
       </UserContext.Provider>      
       <MyFooter />
     </HashRouter>
+    </div>
   );
 }
 

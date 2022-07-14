@@ -83,7 +83,7 @@ function Home(){
           text="Click here to let your friends know you are here!"
           body= {
           <>
-          <button type="submit" className="btn btn-light">Check in!</button>
+          <button type="submit" className="btn btn-light" >Check in!</button>
 
           </>}
         /> 
