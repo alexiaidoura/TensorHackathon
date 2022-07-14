@@ -53,6 +53,7 @@ function CreateAccount(){
   }
 
   return (
+    <div className="createaccount">
     <Card 
       bgcolor="light card title"
       header="Create Account"
@@ -66,7 +67,6 @@ function CreateAccount(){
           Password<br/>
           <input type="password" className="form-control" id="password" placeholder="Enter password" value={password} onChange={e => setPassword(e.currentTarget.value)} /><br/>
           <button type="submit" className="btn btn-light" onClick={handleCreate} disabled={!name||!email||!password}>Create Account</button>
-
         </>
       ) : (
         <>
@@ -74,6 +74,7 @@ function CreateAccount(){
           <button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button>
         </>
       )}
-    />
+      />
+      </div>
   );
 }
