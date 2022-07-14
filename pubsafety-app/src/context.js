@@ -20,7 +20,7 @@ function Card(props){
     );
 }
 
-//figure out how to make this span columns instead of maxWidth?
+
 function CardWide(props){
     return(
         <div className='card text-center'>

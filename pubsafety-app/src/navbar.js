@@ -19,7 +19,9 @@ function NavBar(){
           <li className="nav-item">
             <a className="nav-link" href="#/events/" title="ADD EVENTS TOOLTIP HERE">Events</a>
           </li>
-           
+          <li className="nav-item">
+            <a className="nav-link" href="#/createaccount/" title="ADD CREATEACCT TOOLTIP HERE">Create Account</a>
+          </li>   
           
           <li className="nav-item">
             <a className="nav-link" href="#/login/" title="ADD LOGIN TOOLTIP HERE">Login</a>
