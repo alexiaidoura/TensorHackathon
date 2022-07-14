@@ -1,8 +1,17 @@
+import React from "react";
+import ReactBootstrap from "react-bootstrap";
+import axios from "axios";
+
+
+import {
+    Button,
+    Container,
+    Row,
+    Input,
+  } from "react-bootstrap";
 
   // simulate getting products from DataBase
-
-function MeetUp(){
-const list = [
+const events = [
   { name:"Library Reading", date:"2022-07-28", time:"11:30:00.000", place: "City Hall" }
 ];
 
@@ -69,18 +78,18 @@ const list = [
   
   };
 
-  const Meet = (props) => {
-    const [items, setItems] = React.useState(list);
+  const Events = (props) => {
+    const [items, setItems] = React.useState(events);
     //  Fetch Data
     const { useState } = React;
-    const [query] = useState("api/events");
+    const [query, setQuery] = useState("api/events");
     const [{ data }, doFetch] = useDataApi(
       "http://localhost:1337/api/events",
       {
         data: [],
       }
     );
-      
+  
     console.log(`Rendering Products ${JSON.stringify(data)}`);
     console.log("what is data? ", data);
 
@@ -108,42 +117,37 @@ const list = [
     makeAPIdataUseful();
     console.log('>>>> Restock')
   };
-
+  
   return (
-    
-    <Container>
-      <Row>
-        <Col>
-          <h1>Product List</h1>
-          <ul style={{ listStyleType: "none" }}>{Meet}</ul>
-        </Col>
-        <Col>
-          <h1>Cart Contents</h1>
-          <Accordion>{Meet}</Accordion>
-        </Col>
-        <Col>
-          <h1>CheckOut </h1>
-          
-        </Col>
-      </Row>
-      <Row>
-        <form
-          onSubmit={() => {
-            refreshEvents(`http://localhost:1337/${query}`);
-            console.log(`Refresh called on ${query}`);
-    
-          }}
-        >
-          <input
-            type="text"
-            value={query}
-    
-          />
-          <button type="submit"> Refresh </button>
-        </form>
-      </Row>
-    </Container>
-  );
-};
+    <div>
+    <div className="container">
+    <div className="row">
+    <div className="col-sm-8">col-sm-8</div>
+    <div className="col-sm-4">col-sm-4</div>
+    </div>
+    </div>
 
-};
+       <Row>
+          <form
+            onSubmit={(event) => {
+              refreshEvents(`http://localhost:1337/${query}`);
+              console.log(`Restock called on ${query}`);
+              event.preventDefault();
+            }}
+          >
+            <input
+              type="text"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+            />
+            <button type="submit">Refresh Events</button>
+          </form>
+        </Row>
+      </div>
+    );  
+  };
+
+  ReactDOM.render(
+    <Spa/>,
+    document.getElementById('root1')
+  );
