@@ -1,13 +1,8 @@
 
-// import React from 'react';
-// import ReactDOM from 'react-dom';
-// //import 'mapbox-gl/dist/mapbox-gl.css';
-//import './index.css';
-// //import Spa from './index.js';
-
 function Spa() {
-  
   return (
+    <div>
+    <Events></Events>
     <HashRouter>
       <NavBar/>
       <UserContext.Provider value={{users:[{name:'katelyn',email:'katelyn@example.com',password:'secret',lastlocation:'123 Main St'}]}}>              
@@ -19,9 +14,11 @@ function Spa() {
         <Route path="/events" component={Events} />
 
         <Route path="/login" component={Login} />
-      </UserContext.Provider> 
-      <MyFooter/>     
+   
+      </UserContext.Provider>      
+      <MyFooter />
     </HashRouter>
+    </div>
   );
 }
 
