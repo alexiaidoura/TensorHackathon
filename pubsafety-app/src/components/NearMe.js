@@ -31,11 +31,9 @@
       let parks = await getParks();
       console.log('parks ' + parks);//this works
       parks.forEach(element => { 
-        //HELP -- I WANT TO PULL OUT LAT AND LON. EACH ELEMENT LOOKS LIKE THIS:
-        //{"NAME":"Windemere Beaver Dam","LAT":35.81211,"LON":-78.67235} 
-        //console.log('thiselement ' + parks[key].attributes.LON,parks[key].attributes.LAT);
-        myParks.push([element.attributes.LON, element.attributes.LAT]);
+        myParks.push([element.location.lng,element.location.lat]);
         console.log(myParks);
+        addMarkers(myParks);
       });
       //console.log(busStops);
       
@@ -44,38 +42,38 @@
 
   async function getParks(){
 
-    const url = 'https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Parks/FeatureServer/0/query?where=1%3D1&outFields=NAME,LAT,LON&outSR=4326&f=json'
-    const response = await fetch(url);
-    const json = await response.json();
-    //console.log("json is:" + JSON.stringify(json));
-    //let theParks = JSON.stringify(json);
-    let theParks = JSON.stringify(json); //HELP: NOT CONVINCED THIS SHOULD BE STRINGIFY -- I WANT TO STORE THE OBJECTS SO I CAN RETRIEVE ATTRIBUTES LON AND LAT LATER
-
+    const url = 'https://transloc-api-1-2.p.rapidapi.com/stops.json?agencies=12%2C16&geo_area=35.80176%2C-78.64347%7C35.78061%2C-78.68218&callback=call'
+   const response = await fetch(url, {
+     "method": "GET",
+     "headers": {
+       "x-rapidapi-host": "transloc-api-1-2.p.rapidapi.com",
+       "x-rapidapi-key": "b7171ad4d3msh01b70be2d7d502ep1ab363jsnb55cd1cacc00"
+       //"x-rapidapi-key": RALEIGH_MAP_SECRET //TODO: IMPLEMENT SECRETS
+     }
+   });
+   const json = await response.json();
+   let theParks = json.data;
     //let theStops = json.data;
     console.log("parks are:" + theParks);
     return theParks;
   }
 // counter here represents the index of the current bus stop
-let counter = 0;
-function addMarkers() {
+function addMarkers(myParks) {
   // TODO: move the marker on the map every 1000ms. Use the function marker.setLngLat() to update the marker coordinates
   // Use counter to access bus stops in the array busStops
 
-  setTimeout(() => {
-    if (counter >= myParks.length) return;
-    console.log('counter ' + counter);
-    let marker2 = new mapboxgl.Marker()
-      .setLngLat(myParks[counter].LAT, myParks[counter].LON) // HELP:  
-      .addTo(map);
-    //marker.setLngLat(myParks[counter]);
-    counter++;
-    addMarkers();
-  }, 1000);
+  myParks.forEach((element) => {
+    const parkMarker = new mapboxgl.Marker()
+    parkMarker.setLngLat(element).addTo(map);
+  })
 }
 
 run();
 
-
+// Do not edit code past this point
+if (typeof module !== 'undefined') {
+  module.exports = { run, move, counter, marker, busStops };
+}
  //}
 
 

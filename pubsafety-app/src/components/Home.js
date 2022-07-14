@@ -59,8 +59,9 @@ function Home(){
       
       
       
-        <div className="col-sm-6 text-center">
+        <div className="col">
         <Card 
+          header="Check in!"
           body= {
           <>
             <img src="../src/4641_w.jpeg" width="200"></img><br></br>
@@ -69,12 +70,13 @@ function Home(){
           </>}
         />
         </div>
-        <div className="col-sm-6">
+        <div className="col">
         <Card 
+          header="Events near me"
           body= {
           <>
 
-          <a href='../src/components/nearme.html'><img src='../src/components/nearmemap.png' width={mapwidth}></img></a>
+          <a href='../src/components/nearme.html'><img src='../src/components/eventsnearme.png'></img></a>
           </>}
         />
         </div>
