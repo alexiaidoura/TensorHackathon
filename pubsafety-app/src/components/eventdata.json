@@ -1,0 +1,52 @@
+{
+    "events": [
+      {
+        "event": "Science Club!",
+        "date": "Friday 7/15 3pm",
+        "location": "Children's Museum",
+        "sponsor": "Marijn Haverbeke",
+        "agegroup": "8-10",
+        "thisweek": true
+      },
+      {
+        "event": "Water balloon tag",
+        "date": "Saturday 7/16 10am",
+        "location": "Sprayground",
+        "sponsor": "Addy Osmani",
+        "agegroup": "13-17",
+        "thisweek": true
+      },
+      {
+        "event": "my great event",
+        "date": "Tuesday 7/19 3pm",
+        "location": "McDonalds",
+        "sponsor": "Jane Doe",
+        "agegroup": "8-10",
+        "thisweek": false
+      },
+      {
+        "event": "Super event",
+        "date": "Friday 7/22 3pm",
+        "location": "The Park",
+        "sponsor": "Steve Smith",
+        "agegroup": "10-13",
+        "thisweek": false
+      },
+      {
+        "event": "Another Awesome Event!",
+        "date": "Monday 7/18 3pm",
+        "location": "Whosville Community College",
+        "sponsor": "Jane Roe",
+        "agegroup": "13-18",
+        "thisweek": false
+      },
+      {
+        "event": "Science Works",
+        "date": "Wednesday 7/20 8pm",
+        "location": "Mad Scientist Lab",
+        "sponsor": "Joe Schmoe",
+        "agegroup": "8-10",
+        "thisweek": false
+      }
+    ]
+  }

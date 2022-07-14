@@ -19,7 +19,7 @@ function Home(){
       <div className= "Home">
         <div className="row">
         <div className="col">
-          <h1>Welcome to Whoville</h1>
+          <h1>Welcome to Whosville</h1>
         </div>
       </div>
 
