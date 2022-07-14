@@ -3,16 +3,23 @@
 <head>
 <meta charset="utf-8" />
 <title>Events Near Me</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="../index.css">
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
 <style>
   body { margin: 20; padding: 20; }
-  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  #map { position: absolute; height: 500px; top: 100px; bottom: 20px; width: 100%; }
 </style>
+
+
+<!-- don't use this in production: -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 </head>
 <body>
   <h1>Events near me</h1>
-<div type="container" id="map"></div>
+<div id="map"></div>
  
 <script src="./NearMe.js"></script>
  

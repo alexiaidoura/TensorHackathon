@@ -37,9 +37,12 @@ function Home(){
     return (
       <>
       <div className= "Home">
-        
+        <div className="row">
+
+        <div className="col">
           <h1>Welcome to Whosville</h1>
-        
+        </div>
+      </div>
 
       <div className="row">
         <div className="col">
@@ -55,10 +58,10 @@ function Home(){
         }
       />
         </div>
+      </div>
       
       
-      
-      
+      <div className="row">
         <div className="col-sm-6 text-center">
         <Card 
           body= {
