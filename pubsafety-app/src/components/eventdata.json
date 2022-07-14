@@ -9,7 +9,7 @@
         "thisweek": true
       },
       {
-        "event": "Water balloon tag",
+        "event": "Water Balloon Tag",
         "date": "Saturday 7/16 10am",
         "location": "Sprayground",
         "sponsor": "Addy Osmani",
@@ -17,7 +17,7 @@
         "thisweek": true
       },
       {
-        "event": "my great event",
+        "event": "Community BBQ!",
         "date": "Tuesday 7/19 3pm",
         "location": "McDonalds",
         "sponsor": "Jane Doe",
@@ -25,7 +25,7 @@
         "thisweek": false
       },
       {
-        "event": "Super event",
+        "event": "Moonlight Concert",
         "date": "Friday 7/22 3pm",
         "location": "The Park",
         "sponsor": "Steve Smith",
@@ -33,7 +33,7 @@
         "thisweek": false
       },
       {
-        "event": "Another Awesome Event!",
+        "event": "Women Rule the Room!",
         "date": "Monday 7/18 3pm",
         "location": "Whosville Community College",
         "sponsor": "Jane Roe",
