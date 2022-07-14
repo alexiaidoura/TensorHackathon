@@ -68,9 +68,10 @@ function Home(){
           </>}
         />
         </div>
+        <br></br>
         <div className="col">
         <Card 
-          header="Events near me"
+          header="Events Near Me"
           body= {
           <>
 

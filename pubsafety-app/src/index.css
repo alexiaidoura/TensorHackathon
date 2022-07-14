@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family:'Josefin Slab', serif;
+  font-size: 18pt;
+  color: navy;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,8 +13,13 @@ code {
     monospace;
 }
 
+.container{
+  display: grid;
+}
 
-
+.card-body{
+  color: black;
+}
 
 .display-2 {
   font-family: 'Rubik Moonrocks', cursive;
@@ -40,7 +47,7 @@ code {
   text-align: center;
   font-weight: bold;
   font-size: large;
-  ;
+  
   padding-left: 25%;
   padding-right: 25%;
   padding-bottom: 5%;  

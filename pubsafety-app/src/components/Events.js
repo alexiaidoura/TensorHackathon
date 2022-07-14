@@ -2,8 +2,8 @@ function Events(){
   const ctx = React.useContext(UserContext);    
   return (
     <Card 
-      bgcolor="primary"
-      txtcolor="white"
+      bgcolor="light"
+      txtcolor="black"
       header="EVENTS PLACEHOLDER"
       title=""
       text=""

@@ -10,7 +10,7 @@ function Card(props){
 
     return(
         <div className='card text-center'>
-            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="blue">
                 <img src={props.cardimage} width="200" align="center" className="img-fluid"/>
             </div>
             <div className="card-header">{props.header}</div>
@@ -25,7 +25,7 @@ function Card(props){
 function CardWide(props){
     return(
 
-        <div className='card text-center' style={{maxWidth: "25%"}}>
+        <div className='card text-center' style={{minWidth: "25%"}}>
               <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light" width="400">
                 <img src={props.cardimage}   className="card-img-top"/>
 
