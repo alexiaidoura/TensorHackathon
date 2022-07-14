@@ -17,19 +17,19 @@ function About(){
     <br/>
     
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">
+    <div className="mb-3">
+      <label for="exampleFormControlInput1" className="form-label">
         Please submit any questions, comments or concerns about community events below. <br></br>
         Email address: 
         </label>
-      <input type="email" class="form-control" id="exampleFormControlInput1"/>
+      <input type="email" className="form-control" id="exampleFormControlInput1"/>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Comments:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div className="mb-3">
+      <label for="exampleFormControlTextarea1" className="form-label">Comments:</label>
+      <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
  
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" className="btn btn-primary">Submit</button>
   </form>  
   </div>
   );

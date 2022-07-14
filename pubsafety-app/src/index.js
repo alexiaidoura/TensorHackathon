@@ -2,7 +2,6 @@
 function Spa() {
   return (
     <div>
-    <Events></Events>
     <HashRouter>
       <NavBar/>
       <UserContext.Provider value={{users:[{name:'katelyn',email:'katelyn@example.com',password:'secret',lastlocation:'123 Main St'}]}}>              
@@ -11,7 +10,7 @@ function Spa() {
         <Route path="/about" component={About} />
 
         <Route path="/connectUs" component={ConnectUs} />
-        <Route path="/events" component={Events} />
+        <Route path="/events" component={MeetUp} />
 
         <Route path="/login" component={Login} />
    
