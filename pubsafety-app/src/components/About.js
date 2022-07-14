@@ -3,7 +3,8 @@ function About(){
     <div className = "about">
     <form>
     <div className = "info"> 
-    <h3>Whoville City Hall</h3><br/>
+    <h1 className="display-4">Whoville City Hall</h1>
+    <br></br>
     <h5>1234 S 2735 W <br></br>
     Whoville, Ut, 12345 <br></br></h5>
     
