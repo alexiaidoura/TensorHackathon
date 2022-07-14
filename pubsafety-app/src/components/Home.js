@@ -42,7 +42,7 @@ function Home(){
         
       
       <div className="row">
-          <div className="col" id="upcomingEvents">
+          <div className="col ">
           <CardWide 
               cardimage="../src/cotc-kids.jpeg"
               header="Upcoming Events"
@@ -68,10 +68,9 @@ function Home(){
           </>}
         />
         </div>
-        <br></br>
         <div className="col">
         <Card 
-          header="Events Near Me"
+          header="Events near me"
           body= {
           <>
 
