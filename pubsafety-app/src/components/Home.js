@@ -14,7 +14,7 @@ function Home(){
   // //this week's events: pull in event data from json file or db
   // //check in: store current location and display last five?
   // //events near me: embed map with markers
-  // const mapwidth = 200;
+  const mapwidth = 200;
 
   const [data, setData] = React.useState(null);        
     const [loaded, setLoaded] = React.useState(false);
@@ -76,7 +76,7 @@ function Home(){
           body= {
           <>
 
-          <a href='../src/components/nearme.html'><img src='../src/components/eventsnearme.png'></img></a>
+          <a href='../src/components/nearme.html'><img src='../src/components/eventsnearme.png' style={{mapwidth}}></img></a>
           </>}
         />
         </div>
