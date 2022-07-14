@@ -1,13 +1,13 @@
 function About(){
   return (
-    <div class = "about">
+    <div className = "about">
     <form>
-    <div class = "info"> 
-    Whoville City Building<br></br>
-    1234 S 2735 W <br></br>
-    Whoville, Ut, 12345 <br></br>
+    <div className = "info"> 
+    <h3>Whoville City Hall</h3><br/>
+    <h4>1234 S 2735 W <br></br>
+    Whoville, Ut, 12345 <br></br></h4>
 
-    Hours: <br></br>
+    <ln></ln><b>Hours:</b> <br></br>
     Monday - Friday 8:00-5:00 <br></br>
     <br/>
 

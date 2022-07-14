@@ -40,21 +40,26 @@ function Home(){
         
       <h1 className="display-2 text-center">Welcome to Whosville!</h1>
         
-
+      
       <div className="row">
-        <div className="col">
-        <CardWide 
-        cardimage="../src/cotc-kids.jpeg"
-        header="This week"
-        body={
-          <>
-            {loaded && data.events.map((event,i) => (
+          <div className="col">
+          <CardWide 
+              cardimage="../src/cotc-kids.jpeg"
+              header="This week"
+              body={
+                <>
+                    {loaded && data.events.map((event,i) => (
                     <MyEvent data={event} key={i}/>           
-                ))};     
-        </>   
-        }
-      />
-        </div>
+                ))}     
+                </>  
+              }
+          />
+          </div> 
+        
+     
+      
+      
+      
       
       
       
