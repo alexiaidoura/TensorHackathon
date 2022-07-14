@@ -45,6 +45,11 @@ code {
   color: mediumseagreen;
 }
 
+.createaccount{
+  background-color: lightblue;
+  margin: 1%;
+  padding-bottom: 50%;
+}
 
 .Login{
   background-color: lightblue;
