@@ -73,15 +73,20 @@ code {
 
 .container{
   height: 40em;
-  margin: 1%; 
+  margin-top: 2%;
   background-color: lightblue;
+  width: 100%;
+
 }
 .col1{
   max-width: 25%;
   padding-right: 5%;
+  margin: 1%
+  
 }
 .col{
   max-width: fit-content;
+  padding-top: 2%;
 }
 
 .form-select{

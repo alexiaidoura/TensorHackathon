@@ -1,11 +1,7 @@
-import {
-    Container,
-    Row,
-    Accordion,
-    Col
-  } from "react-bootstrap";
 
   // simulate getting products from DataBase
+
+function MeetUp(){
 const list = [
   { name:"Library Reading", date:"2022-07-28", time:"11:30:00.000", place: "City Hall" }
 ];
@@ -73,7 +69,7 @@ const list = [
   
   };
 
-  const MeetUp = (props) => {
+  const Meet = (props) => {
     const [items, setItems] = React.useState(list);
     //  Fetch Data
     const { useState } = React;
@@ -84,7 +80,7 @@ const list = [
         data: [],
       }
     );
-  
+      
     console.log(`Rendering Products ${JSON.stringify(data)}`);
     console.log("what is data? ", data);
 
@@ -114,15 +110,16 @@ const list = [
   };
 
   return (
+    
     <Container>
       <Row>
         <Col>
           <h1>Product List</h1>
-          <ul style={{ listStyleType: "none" }}>{MeetUp}</ul>
+          <ul style={{ listStyleType: "none" }}>{Meet}</ul>
         </Col>
         <Col>
           <h1>Cart Contents</h1>
-          <Accordion>{MeetUp}</Accordion>
+          <Accordion>{Meet}</Accordion>
         </Col>
         <Col>
           <h1>CheckOut </h1>
@@ -149,3 +146,4 @@ const list = [
   );
 };
 
+};
