@@ -4,25 +4,30 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "event",
-    "description": ""
+    "displayName": "Event"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "event": {
       "type": "string"
     },
     "date": {
-      "type": "date"
+      "type": "datetime"
     },
-    "time": {
-      "type": "time"
-    },
-    "place": {
+    "location": {
       "type": "string"
+    },
+    "sponsor": {
+      "type": "string"
+    },
+    "agegroup": {
+      "type": "string"
+    },
+    "thisweek": {
+      "type": "boolean"
     }
   }
 }
