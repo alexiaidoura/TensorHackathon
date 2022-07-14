@@ -2,6 +2,7 @@ function About(){
   return (
     <div className = "about">
     <form>
+
     <div className = "info"> 
     <h1 className="display-4">Whoville City Hall</h1>
     <br></br>
@@ -12,6 +13,7 @@ function About(){
     <ln></ln><b>Hours:</b> <br></br>
     Monday - Friday 8:00-5:00 <br></br>
     <br/>
+
 
       <b>Contact Information</b> <br></br>
     <h5>Email Address: whoville@gmail.com <br></br>
