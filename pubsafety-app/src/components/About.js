@@ -3,16 +3,16 @@ function About(){
     <div class = "about">
     <form>
     <div class = "info"> 
-    Whoville City Building<br></br>
+    Whosville City Building<br></br>
     1234 S 2735 W <br></br>
-    Whoville, Ut, 12345 <br></br>
+    Whosville, Ut, 12345 <br></br>
 
     Hours: <br></br>
     Monday - Friday 8:00-5:00 <br></br>
     <br/>
 
       Contact Information <br></br>
-    Email Address: whoville@gmail.com <br></br>
+    Email Address: whosville@gmail.com <br></br>
     Phone: 123-456-7890 <br></br>
     <br/>
     

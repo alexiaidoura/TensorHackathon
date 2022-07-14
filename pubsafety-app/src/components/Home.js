@@ -6,15 +6,15 @@
 // add a slider that you can use when you check in to say how busy the event is?
 
 function Home(){
-  const [status, setStatus] = React.useState('');
-  //const [show, setShow] = React.useState(true);
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
-  const ctx = React.useContext(UserContext);    
-  //this week's events: pull in event data from json file or db
-  //check in: store current location and display last five?
-  //events near me: embed map with markers
-  const mapwidth = 200;
+  // const [status, setStatus] = React.useState('');
+  // //const [show, setShow] = React.useState(true);
+  // const [email, setEmail] = React.useState('');
+  // const [password, setPassword] = React.useState('');
+  // const ctx = React.useContext(UserContext);    
+  // //this week's events: pull in event data from json file or db
+  // //check in: store current location and display last five?
+  // //events near me: embed map with markers
+  // const mapwidth = 200;
 
   const [data, setData] = React.useState(null);        
     const [loaded, setLoaded] = React.useState(false);
@@ -22,14 +22,14 @@ function Home(){
     React.useEffect(() => {
         async function getData() {
             const response = await fetch('../src/components/eventdata.json');
-            console.log('response ' + response);
+            //console.log('response ' + response);
             const json     = await response.json();
             setData(json);
             setLoaded(true);
         }
         getData();
     },[])
-    console.log('loaded:', loaded, 'data:', data);
+    //console.log('loaded:', loaded, 'data:', data);
 
     
 
