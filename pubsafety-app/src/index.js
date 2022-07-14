@@ -1,4 +1,3 @@
-
 function Spa() {
   return (
     <div>
@@ -10,9 +9,10 @@ function Spa() {
         <Route path="/about" component={About} />
 
         <Route path="/connectUs" component={ConnectUs} />
-        <Route path="/events" component={MeetUp} />
+        <Route path="/meetUp" component={MeetUp} />
 
         <Route path="/login" component={Login} />
+        <Route path="/strapi" component={Strapi} />
    
       </UserContext.Provider>      
       <MyFooter />
@@ -20,7 +20,6 @@ function Spa() {
     </div>
   );
 }
-
 
 ReactDOM.render(
   <Spa/>,

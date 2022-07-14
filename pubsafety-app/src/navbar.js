@@ -17,7 +17,7 @@ function NavBar(){
             <a className="nav-link" href="#/connectus/" title="ADD CONNECT TOOLTIP HERE">Connect</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/events/" title="ADD EVENTS TOOLTIP HERE">Events</a>
+            <a className="nav-link" href="#/meetUp/" title="ADD EVENTS TOOLTIP HERE">Meet Ups</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#/createaccount/" title="ADD CREATEACCT TOOLTIP HERE">Create Account</a>
@@ -26,6 +26,11 @@ function NavBar(){
           <li className="nav-item">
             <a className="nav-link" href="#/login/" title="ADD LOGIN TOOLTIP HERE">Login</a>
           </li>          
+
+          <li className="nav-item">
+            <a className="nav-link" href="#/Strapi/" title="ADD LOGIN TOOLTIP HERE">Strapi</a>
+          </li>          
+
         </ul>
       </div>
     </nav>
