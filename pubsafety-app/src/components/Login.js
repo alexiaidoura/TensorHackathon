@@ -42,7 +42,7 @@ function Login(){
                    
                     <button type="submit" className="btn btn-light" onClick={submit}>Login</button>
                     </>
- }
+                }
         
         />
     </div>
