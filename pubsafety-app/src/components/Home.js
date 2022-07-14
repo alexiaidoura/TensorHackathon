@@ -42,10 +42,10 @@ function Home(){
         
       
       <div className="row">
-          <div className="col">
+          <div className="col" id="upcomingEvents">
           <CardWide 
               cardimage="../src/cotc-kids.jpeg"
-              header="This week"
+              header="Upcoming Events"
               body={
                 <>
                     {loaded && data.events.map((event,i) => (
@@ -56,13 +56,6 @@ function Home(){
           />
           </div> 
         
-     
-      
-      
-      
-      
-      
-      
       
         <div className="col">
         <Card 
