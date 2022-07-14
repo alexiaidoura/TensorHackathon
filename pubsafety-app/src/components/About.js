@@ -4,22 +4,25 @@ function About(){
     <form>
     <div className = "info"> 
     <h3>Whoville City Hall</h3><br/>
-    <h4>1234 S 2735 W <br></br>
-    Whoville, Ut, 12345 <br></br></h4>
+    <h5>1234 S 2735 W <br></br>
+    Whoville, Ut, 12345 <br></br></h5>
+    
 
     <ln></ln><b>Hours:</b> <br></br>
     Monday - Friday 8:00-5:00 <br></br>
     <br/>
 
-      Contact Information <br></br>
-    Email Address: whoville@gmail.com <br></br>
-    Phone: 123-456-7890 <br></br>
-    <br/>
+      <b>Contact Information</b> <br></br>
+    <h5>Email Address: whoville@gmail.com <br></br>
+    Phone: 123-456-7890</h5> <br></br>
+    
     
     </div>
     <div className="mb-3">
       <label for="exampleFormControlInput1" className="form-label">
-        Please submit any questions, comments or concerns about community events below. <br></br>
+        <h5>Please submit any questions, comments or concerns about community events below.</h5> 
+        <br></br>
+        <br></br>
         Email address: 
         </label>
       <input type="email" className="form-control" id="exampleFormControlInput1"/>
