@@ -12,7 +12,7 @@ function Spa() {
         <Route path="/meetUp" component={MeetUp} />
 
         <Route path="/login" component={Login} />
-        <Route path="/strapi" component={Strapi} />
+        
    
       </UserContext.Provider>      
       <MyFooter />

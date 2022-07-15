@@ -27,10 +27,6 @@ function NavBar(){
             <a className="nav-link" href="#/about/" title="Get contact info, or contact us directly">About</a>
           </li>
            
-          <li className="nav-item">
-            <a className="nav-link" href="#/Strapi/" title="Find events (back end)">Strapi</a>
-          </li>          
-
         </ul>
       </div>
     </nav>
